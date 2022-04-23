@@ -89,8 +89,7 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   /* 1 */
   height: 0;
   /* 1 */
@@ -127,8 +126,7 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -275,8 +273,7 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   /* 1 */
   color: inherit;
   /* 2 */
@@ -310,8 +307,7 @@ textarea {
  */
 [type=checkbox],
 [type=radio] {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */
@@ -415,19 +411,11 @@ header nav li a:hover, header nav li a:active {
 
 @media (min-width: 768px) {
   header .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: space-between;
+    align-items: center;
   }
   header .container nav ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   header .container nav ul li a {
@@ -453,8 +441,37 @@ footer {
   padding: 30px 0;
   background-color: #5f2a71;
 }
-
-footer a, footer p {
-  color: #ffffff;
+footer ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 30px;
 }
+footer ul a {
+  display: block;
+  padding: 5px;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 1.8rem;
+}
+footer ul a:hover, footer ul a.active {
+  color: #0ced94;
+}
+footer .copyright {
+  color: #ffffff;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer ul a {
+    padding: 5px 20px;
+  }
+}
+
 /*# sourceMappingURL=theme.css.map */
