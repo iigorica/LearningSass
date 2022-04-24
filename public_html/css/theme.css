@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Lato:wght@400;700&family=Rubik:wght@400;700&display=swap");
-
 .btn-dark, .btn-info, .btn-warning, .btn-success, .btn-danger, .btn-default {
   display: inline-block;
   padding: 10px 25px;
@@ -12,33 +11,51 @@
 }
 
 .btn-default {
-  background-color: #444444;
+  background-color: rgba(68, 68, 68, 0.8);
   color: #ffffff;
+}
+.btn-default:hover {
+  background-color: #2b2b2b;
 }
 
 .btn-danger {
   background-color: #c9164d;
   color: #ffffff;
 }
+.btn-danger:hover {
+  background-color: #9b113b;
+}
 
 .btn-success {
   background-color: #0ced94;
   color: #ffffff;
+}
+.btn-success:hover {
+  background-color: #0abc76;
 }
 
 .btn-warning {
   background-color: #f88a05;
   color: #ffffff;
 }
+.btn-warning:hover {
+  background-color: #c66e04;
+}
 
 .btn-info {
   background-color: #07fab3;
   color: #000000;
 }
+.btn-info:hover {
+  background-color: #04ca90;
+}
 
 .btn-dark {
   background-color: #000000;
   color: #ffffff;
+}
+.btn-dark:hover {
+  background-color: gray;
 }
 
 /*
@@ -452,7 +469,7 @@ header nav li a {
   font-weight: 700;
 }
 header nav li a:hover, header nav li a.active {
-  color: #0ced94;
+  color: #93cf7e;
 }
 
 @media (min-width: 768px) {
@@ -514,7 +531,7 @@ footer ul a {
   font-size: 1.8rem;
 }
 footer ul a:hover, footer ul a.active {
-  color: #0ced94;
+  color: #93cf7e;
 }
 footer .copyright {
   color: #ffffff;
