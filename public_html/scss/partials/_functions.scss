@@ -40,3 +40,21 @@
     padding: $pt 0 $pb;
     background-color: $bg;
 }
+
+
+//kreirali smo funkciju za povrat boje od neke zadate boje
+@function colorYiq($color){
+    $r: red($color);
+    $g: green($color);
+    $b: blue($color);
+
+//sad da ova yiq od zadatih boja da se pomnozi sa odredjenim brojem i da se one medjusobno saberu
+    $yiq: ($r*0.299) + ($g*0.587) + ($b*0.114);
+
+//sada uslovi
+@if($yiq > 129) {
+    @return $black
+}@else{
+    @return $white
+}
+}
