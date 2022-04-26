@@ -1,6 +1,7 @@
 //sada radimo kopejliranje svih fajlova iz PARTIAL da kada se ocitava sve idemo preko theme.scss-a
 
 @import "partials/_variables.scss";
+@import "partials/functions.scss";
 @import "partials/components.scss";
 @import "partials/_fonts.scss"; 
 
