@@ -4,10 +4,10 @@
   padding: 10px 25px;
   border: none;
   cursor: pointer;
-  border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -o-border-radius: 5px; }
+  border-radius: 5px 0 5px 0;
+  -moz-border-radius: 5px 0 5px 0;
+  -webkit-border-radius: 5px 0 5px 0;
+  -o-border-radius: 5px 0 5px 0; }
 
 .btn-default {
   background-color: rgba(68, 68, 68, 0.8);
@@ -81,6 +81,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 700;
   color: #5f2a71; }
+
+.home-section {
+  padding: 150px 0 150px;
+  background-color: #ffffff; }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -388,7 +392,7 @@ template {
   display: none; }
 
 header {
-  padding: 30px 0;
+  padding: 30px 0 30px;
   background-color: #5f2a71; }
   header .branding {
     text-align: center; }
@@ -422,24 +426,30 @@ header {
   header .container nav ul li a {
     padding: 5px 15px; } }
 
+.home-section {
+  padding: 150px 0 150px;
+  background-color: #ffffff; }
+
 .about-section {
-  padding: 30px 0;
+  padding: 30px 0 30px;
   background-color: #ffffff; }
 
 .service-section {
-  padding: 30px 0; }
+  padding: 30px 0 30px;
+  background-color: transparent; }
 
 .comment-section {
-  padding: 30px 0;
+  padding: 30px 0 30px;
   background-color: #ffffff; }
   .comment-section .comment-img img {
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -o-border-radius: 5px; }
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%; }
 
 .course-section {
-  padding: 30px 0; }
+  padding: 30px 0 30px;
+  background-color: transparent; }
   .course-section table {
     border: 1px solid #000000;
     border-collapse: collapse;
@@ -460,8 +470,12 @@ header {
     .course-section table tbody tr:hover {
       background-color: #c8c8c8; }
 
+.contact-section {
+  padding: 150px 0 150px;
+  background-color: #ffffff; }
+
 footer {
-  padding: 30px 0;
+  padding: 30px 0 30px;
   background-color: #5f2a71; }
   footer ul {
     list-style: none;
