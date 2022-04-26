@@ -23,6 +23,7 @@ $btn-dark: $black;
     @extend %btn;
     background-color: rgba($btn-default, 0.8); 
     color: $btn-default-color;
+    background-color: green;
 
     &:hover{
         background-color: darken($btn-default, 10%);
