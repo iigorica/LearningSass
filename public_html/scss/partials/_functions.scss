@@ -53,8 +53,8 @@
 
 //sada uslovi
 @if($yiq > 129) {
-    @return $black
+    @return $black;
 }@else{
-    @return $white
+    @return $white;
 }
 }
