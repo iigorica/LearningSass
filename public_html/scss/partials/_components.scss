@@ -9,6 +9,7 @@
 // $btn-dark: $black;
 
 //da ne bi svakom pisali isti kod mi smo kreirali jednu varijablu sa nizom koji sadrzi sve sto smo pisali posebno
+
 $btn-colection: (
     'default' : $dark-gray,
     'danger' : $red,
@@ -29,7 +30,7 @@ $btn-colection: (
     @include customRadius(5px, 0, 5px, 0);
 }
 
-
+//ovo $key je sto smo definisali pod '' a value je sta smo im dodali u btn-colection. Onda svaki .btn $key oznacava ime klase i onda njima dajemo stil koji ce imati
 @each $key, $value in $btn-colection{
     .btn-#{$key}{ 
         @extend %btn; 
